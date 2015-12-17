@@ -2,6 +2,8 @@
 
 ## Usages:
 ```php
+use BoringDI\Container;
+
 $c = new Container();
 
 $c->share('A', function (Container $c) {
