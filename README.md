@@ -5,7 +5,7 @@
 $c = new Container();
 
 $c->share('A', function (Container $c) {
-    return new A();
+    return new A($c->get('B');
 });
 
 $c->factory('B', function (Container $c) {
