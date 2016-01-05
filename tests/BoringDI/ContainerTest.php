@@ -8,7 +8,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
         $c = new Container();
 
         $c->share('service', function () {
-            return mt_rand() + mt_rand() + mt_rand();
+            return mt_rand();
         });
 
         $this->assertEquals($c->get('service'), $c->get('service'));
